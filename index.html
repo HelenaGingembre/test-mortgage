@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 6</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="section client-banks-created">
+      <h1>Mortgage</h1>
+    <div class="banklist-container">
+      <h2>List of banks</h2>
+        <ul class="banklist">
+          <li class="banklist__item"  data-id = '1'>
+          <button class="btn btn-edit"  type="button">
+            <p>id=1???</p><p>Mono</p>
+          </button>
+          <button>
+            <svg class="btn__icon">
+              <use href="img/symbol-defs.svg#icon-edit"></use>
+            </svg>
+          </button>
+          <button class="btn btn-close"  type="button">
+            <svg class="btn__icon">
+              <use href="img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </li>
+          
+        </ul>
+
+        <button class="btn btn-create-bank"  type="button">Create new bank</button>
+    </div>
+    <div>
+      <h2>Loan informations</h2>
+      <ul class="infolist">
+        <li class="infolist__item">
+          <p class="bank-info">Bank:
+            <span class="bank-info__data"> ${bank.name} Privat</span>
+          </p>
+        </li>
+        <li class="infolist__item">
+          <p class="bank-info">Mortgage size, $:
+             <span class="bank-info__data">${bank.maxLoan} 100,000</span>
+          </p>
+        </li>
+        <li class="infolist__item">
+          <p class="bank-info">Minimum down payment, $:
+            <span class="bank-info__data">${bank.minPayment} 1,000</span>
+          </p>
+        </li>
+        <li class="infolist__item">
+          <p class="bank-info">Loan period, month:
+            <span class="bank-info__data">${bank.loanTerm} 12</span>
+          </p>
+        </li>
+        <li class="infolist__item">
+          <p class="bank-info">Interest rate, %:
+            <span class="bank-info__data">${bank.interestRate} 12</span>
+          </p>
+        </li>
+        
+      </ul>
+
+    </div>
+
+    </section>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
