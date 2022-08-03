@@ -11,7 +11,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.17;
     color: var(--text-color-p);
     background-color: var(--bg-color-section);
@@ -53,7 +53,7 @@ body {
 }
 .banklist-container,
 .bankinfo-container {
-    width: 45%;
+    width: 40%;
     margin: 0px 20px 0;
     display: flex;
     flex-flow: column;
@@ -70,9 +70,9 @@ body {
     justify-content: flex-end;
     margin-bottom: 10px;
     height: 35px;
-    border-radius: 4px;
+    border-radius: 2px;
     border: 1px solid var(--text-color-p);
-    box-shadow: 0px 2px 2px var(--text-color-p);
+    box-shadow: 0px 1px 1px var(--text-color-p);
     box-sizing: border-box;
     transition: 100ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
