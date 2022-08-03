@@ -21,13 +21,13 @@
                   
                     <p>${id}Mono</p>
                  
-                  <button class="btn btn-edit" type="button">
-                    <svg class="btn__icon " width="35" height="35">
+                  <button class="btn-edit" type="button">
+                    <svg class="btn__icon " width="33" height="33">
                       <use href="./img/symbol-defs.svg#icon-edit" ></use>
                     </svg>
                   </button>
-                  <button class="btn btn-close"  type="button">
-                    <svg class="btn__icon"  width="35" height="35">
+                  <button class="btn-close"  type="button">
+                    <svg class="btn__icon"  width="33" height="33">
                       <use href="./img/symbol-defs.svg#icon-close"></use>
                     </svg>
                   </button>
@@ -36,13 +36,13 @@
                   
                     <p>${id}Privat</p>
                  
-                  <button class="btn btn-edit" type="button">
-                    <svg class="btn__icon" width="35" height="35">
+                  <button class="btn-edit" type="button">
+                    <svg class="btn__icon" width="33" height="33">
                       <use href="./img/symbol-defs.svg#icon-edit" ></use>
                     </svg>
                   </button>
-                  <button class="btn btn-close" type="button">
-                    <svg class="btn__icon" width="35" height="35">
+                  <button class="btn-close" type="button">
+                    <svg class="btn__icon" width="33" height="33">
                       <use href="./img/symbol-defs.svg#icon-close" ></use>
                     </svg>
                   </button>
@@ -56,29 +56,24 @@
             <h2 class="section__sub-title">Loan informations</h2>
             <ul class="infolist">
               <li class="infolist__item">
-                <p class="bank-info">Bank:
-                  <span class="bank-info__data"> ${bank.name} Privat</span>
-                </p>
+                <p class="bank-info">Bank:</p>
+                <p class="bank-info-data"> ${bank.name} Privat</p>
               </li>
               <li class="infolist__item">
-                <p class="bank-info">Mortgage size, $:
-                  <span class="bank-info__data">${bank.maxLoan} 100,000</span>
-                </p>
+                <p class="bank-info">Mortgage size, $:</p>
+                <p class="bank-info-data">${bank.maxLoan} 100,000</p>
               </li>
               <li class="infolist__item">
-                <p class="bank-info">Minimum down payment, $:
-                  <span class="bank-info__data">${bank.minPayment} 1,000</span>
-                </p>
+                <p class="bank-info">Minimum down payment, $:</p>
+                <p class="bank-info-data">${bank.minPayment} 1,000</p>
               </li>
               <li class="infolist__item">
-                <p class="bank-info">Loan period, month:
-                  <span class="bank-info__data">${bank.loanTerm} 12</span>
-                </p>
+                <p class="bank-info">Loan period, month:</p>
+                <p class="bank-info-data">${bank.loanTerm} 12</p>
               </li>
               <li class="infolist__item">
-                <p class="bank-info">Interest rate, %:
-                  <span class="bank-info__data">${bank.interestRate} 12</span>
-                </p>
+                <p class="bank-info">Interest rate, %:</p>
+                <p class="bank-info-data">${bank.interestRate} 12</p>
               </li>
               
             </ul>
