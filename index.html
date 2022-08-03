@@ -10,34 +10,50 @@
 
   </head>
   <body>
-    <section class="section client-banks-created">
-      <div class="container">
-      <h1>Mortgage</h1>
+    <section class="section">
+      
+      <h1 class="section__title">Mortgage</h1>
+      <div class="container client-banks-created">
           <div class="banklist-container">
-            <h2>List of banks</h2>
+            <h2 class="section__sub-title">List of banks</h2>
               <ul class="banklist">
-                <li class="banklist__item"  data-id = '1'>
-                <button class="btn btn-edit"  type="button">
-                  <p>id=1???</p><p>Mono</p>
-                </button>
-                <button>
-                  <svg class="btn__icon">
-                    <use href="./img/symbol-defs.svg#icon-edit"></use>
-                  </svg>
-                </button>
-                <button class="btn btn-close"  type="button">
-                  <svg class="btn__icon">
-                    <use href="./img/symbol-defs.svg#icon-close"></use>
-                  </svg>
-                </button>
-              </li>
+                  <li class="banklist__item"  data-id = '1'>
+                  
+                    <p>${id}Mono</p>
+                 
+                  <button class="btn btn-edit" type="button">
+                    <svg class="btn__icon " width="35" height="35">
+                      <use href="./img/symbol-defs.svg#icon-edit" ></use>
+                    </svg>
+                  </button>
+                  <button class="btn btn-close"  type="button">
+                    <svg class="btn__icon"  width="35" height="35">
+                      <use href="./img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="banklist__item" data-id='2'>
+                  
+                    <p>${id}Privat</p>
+                 
+                  <button class="btn btn-edit" type="button">
+                    <svg class="btn__icon" width="35" height="35">
+                      <use href="./img/symbol-defs.svg#icon-edit" ></use>
+                    </svg>
+                  </button>
+                  <button class="btn btn-close" type="button">
+                    <svg class="btn__icon" width="35" height="35">
+                      <use href="./img/symbol-defs.svg#icon-close" ></use>
+                    </svg>
+                  </button>
+                </li>
                 
               </ul>
 
               <button class="btn btn-create-bank"  type="button">Create new bank</button>
           </div>
-          <div>
-            <h2>Loan informations</h2>
+          <div class="bankinfo-container">
+            <h2 class="section__sub-title">Loan informations</h2>
             <ul class="infolist">
               <li class="infolist__item">
                 <p class="bank-info">Bank:

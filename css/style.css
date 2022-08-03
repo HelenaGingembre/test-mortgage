@@ -1,12 +1,12 @@
-root {
+:root {
     --accent-color: #2196f3;
     --text-color-p: #757575; /*text color */
     --text-color-h: #16018d; /*header color */
     --text-color-hover: #ffffff;
-    --bg-color-section: #69d0f8;
-    --bg-color-btn: #ffffff;
-    --text-color-btn: #16018d;
-    --bg-color-btn-hover: #f8f673;
+    --bg-color-section: #ffffff;
+    --bg-color-btn: #16018d;
+    --text-color-btn: #fdf90f;
+    --bg-color-btn-hover: #fdf90f;
     --text-color-btn-hover: #16018d;
 }
 body {
@@ -30,33 +30,83 @@ body {
 .section__title {
     margin-top: 0;
     margin-bottom: 30px;
+    padding-left: 50px;
+    width: 100%;
     color: var(--text-color-h);
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.03em;
 }
-
+.section__sub-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--text-color-h);
+    text-align: center;
+}
+.client-banks-created {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.banklist-container,
+.bankinfo-container {
+    width: 45%;
+    margin: 0px 20px 0;
+    display: flex;
+    flex-flow: column;
+}
+.banklist {
+    display: flex;
+    flex-flow: column;
+}
+.banklist__item {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid var(--text-color-p);
+    box-shadow: 0px 4px 4px var(--text-color-p);
+    box-sizing: border-box;
+}
 .btn {
     margin: 0 auto;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: var(--text-color-btn);
-    background-color: var(--bg-color-btn);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    border: none;
+    border: 2px solid var(--text-color-p);
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-edit,
+.btn-close {
+    width: 35px;
+    height: 100%;
 }
 
-.btn:hover {
+.btn-create-bank {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    color: var(--text-color-btn);
+    background-color: var(--bg-color-btn);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-create-bank:hover,
+.btn-create-bank:focus {
     color: var(--text-color-btn-hover);
     background-color: var(--bg-color-btn-hover);
 }
